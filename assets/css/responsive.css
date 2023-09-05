@@ -54,17 +54,19 @@
 
   #heading > img {
     width: 150px;
+    margin-bottom: 20px;
   }
 
   .text > h1 {
-    font-size: 40px;
+    font-size: 30px;
     line-height: 50px;
   }
 
   .text > p {
     text-align: center;
-    font-size: 18px;
+    font-size: 15px;
     line-height: 30px;
+    color: rgb(122, 116, 116);
   }
 
   .hire-me-button {
@@ -77,13 +79,14 @@
 /* WORK SKILLS SECTION */
 @media screen and (max-width: 768px) {
   #work-skills {
-    padding-top: 80px;
-    padding-bottom: 80px;
+    margin: 0 28px;
+    height: 100vh;
   }
 
   #work-skills > h2 {
     font-size: 36px;
     line-height: 48px;
+    margin-bottom: 30px;
   }
 
   .my-work-skill-title {
@@ -173,8 +176,7 @@
 @media screen and (max-width: 768px) {
   #contact-container {
     width: 100%; 
-    padding-top: 80px;
-    padding-bottom: 80px;
+    margin-right: 4.5em;
     overflow-x: hidden; 
   }
 
@@ -184,7 +186,7 @@
   }
 
   .email-link {
-    font-size: 28px;
+    font-size: 25px;
     line-height: 36px;
   }
 
@@ -193,8 +195,10 @@
   }
 
   .cta-links {
+    margin-top: 22px;
     flex-direction: column;
     align-items: flex-start;
+    font-size: 15px;
   }
 
   .link {
@@ -204,6 +208,7 @@
 /* CONTACT SECTION  */
 
 
+/* PORTFOLIO PROJECT PAGE  */
 
 @media (max-width: 768px){
   #all-projects-container{
@@ -211,3 +216,4 @@
     padding: 1.2em;
   }
 }
+/* PORTFOLIO PROJECT PAGE  */
