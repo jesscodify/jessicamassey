@@ -1,0 +1,142 @@
+.all-projects-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#portfolio-heading{
+  margin: 30px 10px;
+  padding: 20px 20px;
+}
+
+#portfolio-heading h2{
+  text-align: center;
+}
+
+
+#portfolio-heading>p{
+  text-align: center;
+}
+.project-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.card {
+  height: 350px;
+  width: 320px;
+  border: 1px solid rgb(199, 192, 192);
+  border-radius: 10px;
+  margin: 30px;
+  padding: 0px;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+}
+
+.card-img {
+  height: 100%;
+  width: 100%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.card-header {
+  position: relative;
+  height: 180px;
+}
+
+.card-body {
+  margin-top: 10px;
+  flex-grow: 1;
+  padding: 20px 12px;
+}
+.card-body > h3 {
+  font-size: 16px;
+  font-weight: 600;
+}
+.card-body > p {
+  margin-top: 10px;
+  font-size: 14px;
+  color: grey;
+}
+
+/* .card-footer {
+  border-top: 1px solid grey;
+  height: 48px;
+  padding-top: 10px; 
+} */
+
+.card-footer {
+  display: flex;
+  justify-content: space-between; /* Distribute items evenly */
+  align-items: center; /* Align items vertically */
+  border-top: 1px solid grey;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.card-footer span {
+  font-size: 18px;
+  color: grey;
+  padding: 0 16px;
+}
+
+.button {
+  height: 50px;
+  width: 160px;
+  position: relative;
+  background-color: transparent;
+  cursor: pointer;
+  border: 2px solid white;
+  overflow: hidden;
+  border-radius: 30px;
+  transition: all 0.5s ease-in-out;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  display: flex; /* Added display flex */
+  justify-content: center; /* Center the content horizontally */
+  align-items: center; /* Center the content vertically */
+}
+
+.btn-txt {
+  z-index: 1;
+  font-weight: 800;
+  letter-spacing: 4px;
+  display: inline-block; /* Added to ensure the image is treated as an inline block */
+}
+
+.btn-txt img {
+  max-height: 15%; /* Adjust the image size to fit the button */
+  max-width: 15%;
+}
+
+.type1::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  transition: all 0.5s ease-in-out;
+
+  border-radius: 30px;
+  visibility: hidden;
+  height: 10px;
+  width: 10px;
+  z-index: -1;
+}
+
+.button:hover {
+  box-shadow: 1px 1px 200px #252525;
+  color: #fff;
+  border: none;
+}
+
+.type1:hover::after {
+  visibility: visible;
+  transform: scale(100) translateX(2px);
+}
