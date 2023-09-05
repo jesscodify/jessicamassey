@@ -116,25 +116,25 @@
   }
 
   .container {
-    flex-direction: column; /* Stack containers vertically */
-    height: auto; /* Remove fixed height */
-    margin-bottom: 50px; /* Reduce margin */
+    flex-direction: column;
+    height: auto; 
+    margin-bottom: 50px; 
   }
 
   .container.left-container {
-    width: 100%; /* Take full width on smaller screens */
+    width: 100%; /
   }
 
   .image-container {
-    justify-content: center; /* Center image */
+    justify-content: center; 
   }
 
   .left-container img {
-    width: 100%; /* Full width for images */
+    width: 100%; 
   }
 
   .right-container {
-    text-align: center; /* Center text */
+    text-align: center; 
   }
 
   .right-container > h2 {
@@ -172,10 +172,10 @@
 /* CONTACT SECTION  */
 @media screen and (max-width: 768px) {
   #contact-container {
-    width: 100%; /* Ensure the container fits within the viewport */
+    width: 100%; 
     padding-top: 80px;
     padding-bottom: 80px;
-    overflow-x: hidden; /* Hide horizontal overflow if necessary */
+    overflow-x: hidden; 
   }
 
   #contact-details > h3 {
@@ -184,21 +184,21 @@
   }
 
   .email-link {
-    font-size: 32px;
+    font-size: 28px;
     line-height: 36px;
   }
 
   #contact-details > p {
-    width: auto; /* Allow text to wrap */
+    width: auto; 
   }
 
   .cta-links {
-    flex-direction: column; /* Stack links vertically on small screens */
+    flex-direction: column;
     align-items: flex-start;
   }
 
   .link {
-    margin: 10px 0; /* Adjust margin for spacing */
+    margin: 10px 0;
   }
 }
 /* CONTACT SECTION  */
